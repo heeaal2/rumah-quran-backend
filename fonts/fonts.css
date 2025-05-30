@@ -1,0 +1,86 @@
+/* Segoe UI Font Family */
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI.woff2') format('woff2'),
+         url('SegoeUI.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-Bold.woff2') format('woff2'),
+         url('SegoeUI-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-Light.woff2') format('woff2'),
+         url('SegoeUI-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-SemiBold.woff2') format('woff2'),
+         url('SegoeUI-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Font Family Declarations */
+
+/* ZT Formom Font */
+@font-face {
+    font-family: 'ZT Formom';
+    src: url('../font/zt-formom.woff') format('woff'),
+         url('../font/zt-formom.otf') format('opentype'),
+         url('../font/zt-formom.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'ZT Formom';
+    src: url('../font/zt-formom-italic.woff') format('woff'),
+         url('../font/zt-formom-italic.otf') format('opentype'),
+         url('../font/zt-formom-italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* Sloop Script Font */
+@font-face {
+    font-family: 'Sloop Script';
+    src: url('../font/Sloop-ScriptThree.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Marcovaldo Font */
+@font-face {
+    font-family: 'Marcovaldo';
+    src: url('../font/Marcovaldo-Regular-trial.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* OPTI Flemish Script Font */
+@font-face {
+    font-family: 'OPTI Flemish Script';
+    src: url('../font/OPTIFlemish-Script.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+} 

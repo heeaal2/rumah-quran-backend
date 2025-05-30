@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Registrations</title>
+    <link rel="stylesheet" href="admin-style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Admin Dashboard</h1>
+        <button class="refresh-btn" onclick="fetchRegistrations()">Refresh Data</button>
+        <div id="error" class="error"></div>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Phone Number</th>
+                        <th>Attendance Date</th>
+                        <th>Registration Date</th>
+                        <th>Created At</th>
+                    </tr>
+                </thead>
+                <tbody id="registrationsTable">
+                    <tr>
+                        <td colspan="5" class="loading">Loading registrations...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="admin-script.js"></script>
+</body>
+</html> 
