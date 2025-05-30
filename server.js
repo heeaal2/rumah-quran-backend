@@ -5,20 +5,10 @@ require('dotenv').config();
 
 const app = express();
 
-// CORS configuration
-const allowedOrigins = [
-    'http://localhost:3000',
-    'https://hilmipasha.github.io'  // Replace with your GitHub Pages URL
-];
-
+// Enable CORS for all routes
 app.use(cors({
-    origin: function(origin, callback) {
-        if (!origin || allowedOrigins.indexOf(origin) !== -1) {
-            callback(null, true);
-        } else {
-            callback(new Error('Not allowed by CORS'));
-        }
-    },
+    origin: ['https://heeaal2.github.io', 'http://localhost:3000'],
+    methods: ['GET', 'POST'],
     credentials: true
 }));
 
@@ -139,6 +129,15 @@ app.get('/registrations', async (req, res) => {
 // Health check endpoint
 app.get('/health', (req, res) => {
     res.json({ status: 'ok' });
+});
+
+// Add error handling middleware
+app.use((err, req, res, next) => {
+    console.error('Error:', err);
+    res.status(500).json({ 
+        error: 'Internal Server Error',
+        message: err.message 
+    });
 });
 
 const PORT = process.env.PORT || 3000;
